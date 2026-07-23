@@ -1,5 +1,0 @@
-git init
-git add .
-git commit -m"message"
-git add origin repo link
-git push -u origin main
