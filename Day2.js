@@ -24,5 +24,12 @@
 
 
 // promises
-
-
+const promiseOne = new Promise((resolve, reject) => {
+    console.log("Promise is pending");
+    resolve("Promise resolved");
+});
+promiseOne.then((data) => {
+    console.log("Promise resolved with data:", data);
+}).catch((error) => {
+    console.error("Promise rejected with error:", error);
+});
