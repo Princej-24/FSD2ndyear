@@ -20,7 +20,7 @@ async function createFile() {
 }
 
 
-// 2. READ
+// 2. READ 
 async function readFile() {
     try {
         const data = await fs.readFile(fileName, "utf8");
