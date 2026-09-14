@@ -5,7 +5,7 @@ class myEmitter extends EventEmitter {}
 const event = new myEmitter()
 
 event.on("greet", (name) => {
-    console.log(`Hello $(name)`);        // template literals `$()`
+    console.log(`Hello ${name}`);
 });
 
 event.on("exit", () => {
