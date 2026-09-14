@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+</head>
+<body>
+    <h1>Student Records Management</h1>
+    <div id="records">Loading student records...</div>
+    <script>
+        fetch('/api/students')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('records');
+                container.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            });
+    </script>
+</body>
+</html>
